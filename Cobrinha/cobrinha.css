@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181818;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+#game-board {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 5px solid #ffffff;
+  background-color: #000000;
+}
+
+.snake-segment {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+}
+
+#food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 36px;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#botaoreinicio {
+  position: absolute;
+  top: calc(50% + 40px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#botaoreinicio:hover {
+  background-color: #cccccc;
+}
+
+#back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ff2d55;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#back-button:hover {
+  background-color: #ff3333;
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+#start-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff2d55;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  color: white;
+}
+
+#start-button:hover {
+  background-color: #ff3333;
+  font-weight: bold;
+}
+
+#instructions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+#instructions h2 {
+  margin-bottom: 10px;
+}
+
+#instructions p {
+  margin: 0;
+  text-align: justify;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jogo da Cobrinha</title>
+  <link href="cobrinha.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <button id="back-button" onclick="goToHomePage()">&#8592; Voltar para a Página Principal</button>
+  </div>
+
+  <button id="start-button">Iniciar Jogo</button>
+  <div id="instructions" style="display: none;">
+    <h2>Instruções do Jogo</h2>
+    <p>
+    <ol>
+      <li>Objetivo do jogo: O objetivo do jogo da cobrinha é controlar a serpente em seu movimento pelo tabuleiro e
+        comer o máximo possível de alimentos para crescer. O jogo termina quando a serpente colide com as paredes do
+        tabuleiro ou consigo mesma.
+      </li>
+      <br>
+      <li>Controles: Use as teclas de seta do teclado (cima, baixo, esquerda, direita) para controlar a direção da
+        serpente. Tente evitar colidir com as paredes do tabuleiro e com a própria cauda da serpente.</li>
+    </ol>
+    </p>
+  </div>
+
+  <div id="game-board"></div>
+  <div id="score">Pontuação: 0</div>
+  <div id="game-over">
+    Fim de Jogo!<br>
+    Pontuação Final: 0<br>
+    <button id="botaoreinicio">Reiniciar</button>
+  </div>
+
+  <script src="cobrinha.js"></script>
+  <script>
+    function goToHomePage() {
+      window.location.href = '../index.html';
+    }
+  </script>
+</body>
+
+</html>
