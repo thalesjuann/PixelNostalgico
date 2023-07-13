@@ -6,9 +6,6 @@ function tetris() {
   window.location.href = 'Tetris/tetris.html';
 }
 
-function brickbreaker() {
-  window.location.href = 'Brick Breaker/brickbreaker.html';
-}
 
 document.addEventListener('DOMContentLoaded', function() {
   var button = document.querySelector('.menu-contato');
