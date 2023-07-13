@@ -6,6 +6,9 @@ function tetris() {
   window.location.href = 'Tetris/tetris.html';
 }
 
+function pong() {
+  window.location.href = 'Pong/pong.html';
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   var button = document.querySelector('.menu-contato');

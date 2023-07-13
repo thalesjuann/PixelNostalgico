@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Pong</title>
+  <meta charset="UTF-8">
+  <link href="pong.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="areadejogo">
+    <canvas width="750" height="585" id="game"></canvas>
+  </div>
+  <button id="voltar" onclick="goToHomePage()">&#8592; Voltar para a Página Principal</button>
+  <script src="pong.js"></script>
+  <script>
+    function goToHomePage() {
+      window.location.href = '../index.html';
+    }
+  </script>
+</body>
+
+</html>
